@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GROUP 1 SUMMARY</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
         .nav-btn {
             text-decoration: none;
             appearance: none;
@@ -29,10 +39,103 @@
             background-color: #1f2e3a;
             color: #d8e4ed;
         }
+
+        .page-main {
+            padding: 20px;
+        }
+
+        .hero-title {
+            color: #1f2e3a;
+            margin: 12px auto 0;
+            text-align: center;
+        }
+
+        .hero-text {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 900px;
+            margin: 12px auto 0;
+            text-align: center;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
+        .image-row img {
+            width: 360px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 14px rgba(31, 46, 58, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            #header {
+                height: auto;
+                padding: 10px;
+                justify-content: center;
+            }
+
+            #header nav {
+                height: auto;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .nav-btn {
+                width: calc(50% - 4px);
+                height: 56px;
+                font-size: 13px;
+            }
+
+            .page-main {
+                padding: 16px 12px 28px;
+            }
+
+            .hero-title {
+                font-size: 28px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+                text-align: left;
+            }
+
+            .image-row {
+                gap: 12px;
+                margin-top: 18px;
+            }
+
+            .image-row img {
+                width: 100%;
+                max-width: 520px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-btn {
+                width: 100%;
+            }
+
+            .hero-title {
+                font-size: 24px;
+            }
+
+            .hero-text {
+                font-size: 15px;
+            }
+        }
     </style>
 </head>
-<body style="margin: 0;">
-    <header id="header" style="width: 100%; height: 80px; background-color: #6f8fa8; display: flex; align-items: center; justify-content: flex-end;">
+<body>
+    <header id="header" style="width: 100%; min-height: 80px; background-color: #6f8fa8; display: flex; align-items: center; justify-content: flex-end;">
         <nav style="display: flex; height: 80px;">
             <a class="nav-btn" href="index.html">Home page</a>
             <a class="nav-btn" href="team.html">Meet the team</a>
@@ -41,21 +144,19 @@
             <a class="nav-btn" href="conclusion.html">Conclusion</a>
         </nav>
     </header>
-    <main style="padding: 20px;">
-        <h1 style="color: #1f2e3a; margin: 12px auto 0; text-align: center;">GROUP 1 SUMMARY</h1>
-        <p style="color: #333; font-size: 18px; line-height: 1.7; max-width: 900px; margin: 12px auto 0; text-align: center;">
+    <main class="page-main">
+        <h1 class="hero-title">GROUP 1 SUMMARY</h1>
+        <p class="hero-text">
             You are visiting the summary page of Group 1's project titled "Empowering Digital Citizens: Building Responsible Digital Practices," which focuses on promoting responsible digital practices among individuals and communities. The project aims to empower digital citizens by providing them with the knowledge, tools, and resources needed to navigate the digital world safely and responsibly. Through a combination of educational initiatives, community engagement, and advocacy efforts, the project seeks to foster a culture of digital responsibility and encourage positive online behavior. By addressing issues such as online privacy, cyberbullying, and digital literacy, the project strives to create a more inclusive and respectful digital environment for all users.
         </p>
-        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
+        <div class="image-row">
             <img
                 src="indeximg.jpg"
                 alt="Index image 1"
-                style="width: 360px; max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 14px rgba(31, 46, 58, 0.15);"
             >
             <img
                 src="indeximg2.png"
                 alt="Index image 2"
-                style="width: 360px; max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 14px rgba(31, 46, 58, 0.15);"
             >
         </div>
     </main>
